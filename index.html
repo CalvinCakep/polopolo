@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Penelitian Sosial</title>
+    <link rel="stylesheet" href="webantropologi.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">SerbaAda.com</div>
+        </div>
+    </header>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Journal Anak Pintar</div>
+            <div class="menu-links">
+                <a href="websiteantropologi.html" class="active">Home</a>
+                <a href="tab2.html">Etnis China Benteng</a>
+                <a href="tab3.html">Suku Betawi</a>
+                <a href="tab4.html">About Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+      <H1>Kebudayaan Etnis Tionghoa (China) Benteng dan Suku Betawi</H1>
+        <div id="beranda" class="tab-content active">
+            <img src="betawi.webp" width="640" height="425" alt="Foto Beranda" class="hero-image">
+            <h2 class="page-title">Perkenalan Singkat</h2>
+            <p>Indonesia memiliki ragam suku dan budaya. Masing-masing suku dan budaya memiliki keunikan dan keindahannya sendiri. Terkadang, banyak orang menjelajahi kekayaan identitas manusia melalui pemahaman tentang keberagaman suku bangsa. Sebagai ilmu yang mempelajari manusia dan budayanya, antropologi mengajarkan bahwa perbedaan adat, bahasa, dan tradisi bukanlah sekat pemisah. Sebaliknya, perbedaan tersebut adalah bukti nyata dari kreativitas manusia dalam beradaptasi dengan lingkungannya. Setiap suku memiliki keunikan cara pandang, sistem sosial, dan warisan leluhur yang membentuk corak peradaban yang kaya.
+               Untuk memahami bagaimana keberagaman ini tumbuh dan saling memengaruhi, secara khusus Peneliti akan memperlihatkan dua kelompok masyarakat yang hidup berdampingan di wilayah urban, yaitu Etnis Tionghoa (China) Benteng dan Suku Betawi. Peneliti akan melihat lebih dekat bagaimana perpaduan budaya (akulturasi) membentuk tradisi unik mereka. Pembahasan ini akan mencakup mulai dari kuliner khas, arsitektur bangunan, pakaian adat, hingga kesenian tradisional yang menjadi simbol identitas dan keharmonisan kedua komunitas ini.</p>
+        </div>
+
+        <div id="galeri" class="tab-content">
+            <h1 class="page-title"></h1>
+            <p class="mb-20">Berikut adalah sebuah kelenteng yang terletak disekitar Tangerang.</p>
+            <div class="grid-2">
+                <img src="benteng 1.jpeg" width="640" height="380" alt="Foto Galeri" class="hero-image m-0">
+                <div>
+                    <h2>Tujuan</h2>
+                    <p>Melalui eksplorasi ini, penelitian antropologi tersebut bertujuan untuk mengidentifikasi bentuk-bentuk kebudayaan khas dari kedua etnis, sekaligus menganalisis proses akulturasi dan interaksi sosial yang terjadi di antara mereka. Lebih dari sekadar inventarisasi budaya, kajian ini juga diarahkan untuk menjelaskan nilai-nilai keharmonisan dan toleransi yang tercipta, serta mendokumentasikan warisan tradisi lokal tersebut sebagai upaya pelestarian nyata di tengah arus modernisasi.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="artikel" class="tab-content">
+            <div class="grid-2 row-reverse"> 
+                <img src="benteng 2.jpeg" width="730" height="486" alt="Foto Artikel" class="hero-image m-0 ltr-img">
+                <div class="ltr-text">
+                    <p>Di tengah pesatnya arus modernisasi, informasi mengenai kekayaan tradisi lokal seperti Etnis China Benteng dan Suku Betawi sering kali tersebar secara terpisah atau bahkan mulai terlupakan. Oleh karena itu, website ini hadir sebagai platform digital yang mengintegrasikan berbagai data, dokumentasi, dan hasil kajian antropologi kedua budaya tersebut ke dalam satu wadah yang interaktif. Adapun tujuan utama dari pembentukan website ini adalah untuk menyediakan ruang edukasi publik yang informatif mengenai akulturasi budaya China Benteng dan Betawi, sekaligus menjadi arsip digital yang mendokumentasikan kuliner, arsitektur, pakaian, dan kesenian mereka. Melalui platform ini, diharapkan kesadaran masyarakat akan pentingnya toleransi, keharmonisan, dan pelestarian warisan budaya dapat meningkat, sekaligus mempermudah para pelajar maupun peneliti dalam mengakses referensi kebudayaan yang valid dan menarik.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Hak Cipta Dilindungi. Dibuat dengan HTML & CSS.</p>
+    </footer>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].className = tabcontent[i].className.replace(" active", "");
+            }
+
+            tablinks = document.getElementsByClassName("tab-link");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            document.getElementById(tabName).className += " active";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>
